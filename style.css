@@ -1,9 +1,44 @@
-body{background-color:dark rgb(36, 98, 192);
+body{background-color:orangered;
+color:pink
+display: grid;
+grid-template-columns: 120px 120px auto 100px;
+grid-template-rows: 80px 80px auto 50 px;
+grid-template-areas:
+"header"
+"nav"
+"main"
+"footer"
+}
+header{
+    grid-area: header;
 }
 
-h1{text-align:center;}
+nav{
+    grid-area: nav;
+}
 
+main{
+    grid-area; main
+}
+footer{
+    grid-area; footer
+}
+
+
+p{color :brown}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align:center;}
+.programP{
+    background-color: antiquewhite;
+    color:pink;
+    text-align: center;
+    border: 2px solid red
+}
 .altP{
     text-align: right;
+
 }
+a{text-decoration: none;}
 
