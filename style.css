@@ -1,27 +1,44 @@
-body{background-color:orangered;
-color:pink
-display: grid;
-grid-template-columns: 120px 120px auto 100px;
-grid-template-rows: 80px 80px auto 50 px;
-grid-template-areas:
+body{
+background-color:orangered;
+color:pink;
+display:  grid;
+grid-template-columns:
+grid-template-rows: 80px 80px auto 50px;
+grid-template-areas: 
 "header"
 "nav"
 "main"
-"footer"
+"footer" ;
 }
 header{
     grid-area: header;
 }
 
-nav{
-    grid-area: nav;
+nav>ul{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ margin: 0;
+ padding: 0;
+
+}
+
+nav li{
+    list-style-type:none;
+text-align: center;
+
+
 }
 
 main{
-    grid-area; main
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+
+
 }
 footer{
-    grid-area; footer
+    grid-area: footer
 }
 
 
